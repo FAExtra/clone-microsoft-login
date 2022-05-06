@@ -1,0 +1,86 @@
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    overflow: hidden;
+    font-size: 0.8rem;
+    font-family: 'Segoe UI', serif !important;
+}
+
+form  {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+    width: clamp(280px, 50%, 900px);
+    box-shadow: 0px 4px 12px gainsboro;
+}
+
+form a {
+    color: rgb(22, 113, 204);
+    text-decoration: none;
+}
+
+form img {
+    width: 112px;
+}
+
+form input {
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 0.6rem 0rem;
+}
+
+form h1 {
+    font-size: 1.5rem;
+}
+
+form input[type=submit] {
+    background-color: rgb(24, 116, 209);
+    border: none;
+    color: white;
+    padding: 0.4rem 2rem;
+    width: min-content;
+    align-self: flex-end;
+    outline: none;
+}
+
+form input[type=submit]:hover { 
+    background-color: rgb(19, 98, 177);
+}
+
+.bg {
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.1;
+    filter: blur(4rem);
+    display: grid;
+    position: absolute;
+    z-index: -69;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sqr {
+    width: 100%;
+    height: 100%;
+}
+
+.red {
+    background: red;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.green {
+    background: green;
+}
+
+.blue {
+    background: blue;
+}
+
